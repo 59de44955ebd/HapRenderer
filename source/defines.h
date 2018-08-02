@@ -1,0 +1,50 @@
+#pragma once
+
+//#define USE_RGBA
+
+#define ATTRIB_VERTEX 3
+#define ATTRIB_TEXTURE 4
+
+#define WM_FRAMECHANGED WM_USER
+#define WM_SHOW WM_USER+1
+
+//TEST
+#define FFALIGN(x, a) (((x)+(a)-1)&~((a)-1))
+#define TEXTURE_BLOCK_W 4
+#define TEXTURE_BLOCK_H 4
+
+//######################################
+// DXT TYPES
+//######################################
+
+//{31545844-0000-0010-8000-00AA00389B71} // Hap
+DEFINE_GUID(MEDIASUBTYPE_DXT1,
+	FOURCC_DXT1, 0x0000, 0x0010, 0x80, 0x00, 0x00, 0xAA, 0x00, 0x38, 0x9B, 0x71);
+
+//{35545844-0000-0010-8000-00AA00389B71} // Hap Alpha
+DEFINE_GUID(MEDIASUBTYPE_DXT5,
+	FOURCC_DXT5, 0x0000, 0x0010, 0x80, 0x00, 0x00, 0xAA, 0x00, 0x38, 0x9B, 0x71);
+
+//{59545844-0000-0010-8000-00AA00389B71} // Hap Q
+#define FOURCC_DXTY (MAKEFOURCC('D','X','T','Y'))
+DEFINE_GUID(MEDIASUBTYPE_DXTY,
+	FOURCC_DXTY, 0x0000, 0x0010, 0x80, 0x00, 0x00, 0xAA, 0x00, 0x38, 0x9B, 0x71);
+
+//######################################
+// HAP TYPES
+//######################################
+
+//{31706148 - 0000 - 0010 - 8000 - 00AA00389B71} = Hap1
+#define FOURCC_Hap1 (MAKEFOURCC('H','a','p','1'))
+DEFINE_GUID(MEDIASUBTYPE_Hap1,
+	FOURCC_Hap1, 0x0000, 0x0010, 0x80, 0x00, 0x00, 0xAA, 0x00, 0x38, 0x9B, 0x71);
+
+//{35706148-0000-0010-8000-00AA00389B71} = Hap5 = Hap Alpha
+#define FOURCC_Hap5 (MAKEFOURCC('H','a','p','5'))
+DEFINE_GUID(MEDIASUBTYPE_Hap5,
+	FOURCC_Hap5, 0x0000, 0x0010, 0x80, 0x00, 0x00, 0xAA, 0x00, 0x38, 0x9B, 0x71);
+
+//{35706148-0000-0010-8000-00AA00389B71} = HapY = Hap Q
+#define FOURCC_HapY (MAKEFOURCC('H','a','p','Y'))
+DEFINE_GUID(MEDIASUBTYPE_HapY,
+	FOURCC_HapY, 0x0000, 0x0010, 0x80, 0x00, 0x00, 0xAA, 0x00, 0x38, 0x9B, 0x71);
