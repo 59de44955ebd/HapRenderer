@@ -8,5 +8,10 @@ The renderer creates a window with OpenGL context (using GLFW 3.3), and displays
 
 The main purpose of this filter is to allow to explore and test Hap and DXT flavors in DirectShow editors like GraphEdit/GraphStudio/GraphStudioNext.
 
-Here a few GraphStudio screenshots of example graphs:
+Here some GraphStudio screenshots of example graphs:
+
+- HapRenderer rendering "sample-1080p30-Hap.avi" directly:
+
+
+- HapRenderer rendering DXT1 frames, as provided by the Renderheads DirectShow codec:
 
