@@ -11,7 +11,7 @@ The main purpose of this filter is to allow to explore and test Hap and DXT flav
 Here some GraphStudio screenshots of example graphs:
 
 - HapRenderer rendering "sample-1080p30-Hap.avi" directly:
-
+![](screenshots/haprenderer_hap1.png)
 
 - HapRenderer rendering DXT1 frames, as provided by the Renderheads DirectShow codec:
-
+![](screenshots/haprenderer_dxt1.png)
